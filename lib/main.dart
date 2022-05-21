@@ -1,4 +1,5 @@
 
+import 'package:chats_applications/screens/chats.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Hello(),
       theme: CupertinoThemeData(
-          brightness: Brightness.light, primaryColor: Color.fromARGB(255, 225, 14, 240)),
+          brightness: Brightness.light, primaryColor: Color.fromARGB(255, 31, 81, 230)),
     );
   }
 }

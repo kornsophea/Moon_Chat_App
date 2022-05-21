@@ -76,7 +76,7 @@ class _VerifyNumberState extends State<VerifyNumber> {
                 Center(
                   child: Text("OTP Verification",
                       style: TextStyle(
-                          color: Color(0xFF08C187).withOpacity(0.7),
+                          color: Color.fromARGB(255, 17, 84, 218).withOpacity(0.7),
                           fontSize: 30)),
                 ),
                 Text("Enter OTP sent to",

@@ -12,10 +12,10 @@ class LetsStart extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(CupertinoIcons.right_chevron,
-              color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.7)),
+              color: Colors.white70.withOpacity(0.7)),
           Text("Continues",
               style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.7),
+                color: Colors.white70.withOpacity(0.7),
                 fontSize: 25,
               ))
         ],

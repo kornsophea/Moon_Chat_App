@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../components/blur_image_page_scaffold.dart';
 import '../../components/lets_start.dart';
+import '../../components/logo.dart';
 import '../../components/terms_and_conditions.dart';
 import 'edit_number.dart';
 
@@ -13,25 +14,24 @@ class Hello extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlurImagePageScaffold(
-      imagePath: 'images/message_image.jpg',
+      imagePath: 'images/chat-background.png',
       body: [
-        Icon(Icons.chat,size: 170.0,color: Colors.black45),
-        //Image(image: AssetImage('images/logos.png',),),
-       // Logo(height: 100.0, width: 150.0, radius: 100.0),
+        
+        Logo(height: 150.0, width: 150.0, radius: 50.0),
         Text("Moon Li",
             style:
-                TextStyle(color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.7), fontSize: 60)),
+                TextStyle(color: Colors.white60.withOpacity(0.7), fontSize: 60)),
         Column(
           children: [
             Text("Welcome to my chat application",
                 style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.7), fontSize: 20)),
+                    color: Colors.white.withOpacity(0.7), fontSize: 20)),
             Text("mobile messaging with friends",
                 style: TextStyle(
-                    color: Color.fromARGB(255, 19, 12, 12).withOpacity(0.7), fontSize: 20)),
+                    color: Color.fromARGB(255, 255, 245, 245).withOpacity(0.7), fontSize: 20)),
             Text("all over the world",
                 style: TextStyle(
-                    color: Color.fromARGB(255, 7, 2, 2).withOpacity(0.7), fontSize: 20))
+                    color: Color.fromARGB(255, 255, 244, 244).withOpacity(0.7), fontSize: 20))
           ],
         ),
         TermsAndConditions(onPressed: () {}),

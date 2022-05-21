@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
       child: CupertinoTabScaffold(
         resizeToAvoidBottomInset: true,
         tabBar: CupertinoTabBar(
-          items: [
+          items: const [
             BottomNavigationBarItem(
               label: "Chats",
               icon: Icon(CupertinoIcons.chat_bubble_2_fill),

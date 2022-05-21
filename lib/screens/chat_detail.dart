@@ -126,8 +126,8 @@ class _ChatDetailState extends State<ChatDetail> {
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: ChatBubble(
                               clipper: ChatBubbleClipper6(
-                                nipSize: 0,
-                                radius: 0,
+                                nipSize: 10,
+                                radius: 10,
                                 type: isSender(data['uid'].toString())
                                     ? BubbleType.sendBubble
                                     : BubbleType.receiverBubble,
@@ -135,8 +135,8 @@ class _ChatDetailState extends State<ChatDetail> {
                               alignment: getAlignment(data['uid'].toString()),
                               margin: EdgeInsets.only(top: 20),
                               backGroundColor: isSender(data['uid'].toString())
-                                  ? Color(0xFF08C187)
-                                  : Color(0xffE7E7ED),
+                                  ? Color.fromARGB(255, 6, 13, 233)
+                                  : Color.fromARGB(255, 242, 7, 128),
                               child: Container(
                                 constraints: BoxConstraints(
                                   maxWidth:
@@ -153,7 +153,7 @@ class _ChatDetailState extends State<ChatDetail> {
                                                 color: isSender(
                                                         data['uid'].toString())
                                                     ? Colors.white
-                                                    : Colors.black),
+                                                    : Color.fromARGB(255, 255, 249, 249)),
                                             maxLines: 100,
                                             overflow: TextOverflow.ellipsis)
                                       ],
@@ -172,7 +172,7 @@ class _ChatDetailState extends State<ChatDetail> {
                                               color: isSender(
                                                       data['uid'].toString())
                                                   ? Colors.white
-                                                  : Colors.black),
+                                                  : Color.fromARGB(255, 255, 244, 244)),
                                         )
                                       ],
                                     )

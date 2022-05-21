@@ -16,7 +16,7 @@ class EditNumber extends StatefulWidget {
 
 class _EditNumberState extends State<EditNumber> {
   var _enterPhoneNumber = TextEditingController();
-  Map<String, dynamic> data = {"name": "Portugal", "code": "+351"};
+  Map<String, dynamic> data = {"name": "Cambodai", "code": "+855"};
   Map<String, dynamic>? dataResult;
 
   @override
@@ -37,10 +37,12 @@ class _EditNumberState extends State<EditNumber> {
         children: [
           Row(
             children: [
-              const Logo(width: 70.0, height: 70.0, radius: 30.0),
-              Text("Verification • one step",
+              SizedBox(width: 70,),
+              const Logo(width: 70.0, height: 70.0, radius: 50.0),
+              
+              Text("Verification",
                   style: TextStyle(
-                      color: const Color(0xFF08C187).withOpacity(0.7), fontSize: 30))
+                      color: Color.fromARGB(255, 26, 79, 224).withOpacity(0.7), fontSize: 30))
             ],
           ),
           Text("Enter your phone number",
@@ -56,7 +58,7 @@ class _EditNumberState extends State<EditNumber> {
               });
             },
             title:
-                Text(data['name'], style: const TextStyle(color: const Color(0xFF08C187))),
+                Text(data['name'], style: const TextStyle(color: Color.fromARGB(255, 46, 138, 230))),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -79,10 +81,12 @@ class _EditNumberState extends State<EditNumber> {
           ),
           const Text("You will receive an activation code in short time",
               style:
-                  TextStyle(color: CupertinoColors.systemGrey, fontSize: 15)),
+                  TextStyle(color: Color.fromARGB(255, 146, 146, 167), fontSize: 15)),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 40),
+            
             child: CupertinoButton.filled(
+              disabledColor: Colors.black45,
                 child: const Text("Request code"),
                 onPressed: () {
                   Navigator.push(

@@ -14,12 +14,13 @@ class Logo extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(radius)),
           shape: BoxShape.rectangle,
-          color: Colors.white.withOpacity(0.9)),
+          color: Colors.white.withOpacity(0)),
       child: Padding(
-        padding: const EdgeInsets.all(2.0),
+        padding: const EdgeInsets.all(0.1),
          child://Icon(Icons.chat_outlined,size: 100,),
          Image(
-            image: AssetImage('images/logos.png'), fit: BoxFit.fitWidth),
+           
+            image: AssetImage('images/facebook-chat-logo.png'), fit: BoxFit.fitWidth),
       ),
     );
   }
